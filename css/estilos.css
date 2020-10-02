@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body{
+	background: #000;
+	display: flex;
+	font-family: 'Montserrat';
+	font-weight: 400;
+  	justify-content: center;
+  	align-items: center;
+}
+nav{
+	height: auto;
+	width: 120px;
+}
+h1{
+	font-size: 1rem;
+}
+h2{
+	font-size: 1.2rem;
+}
+li{
+	background: #00b7c2;
+	font-size: 12px;
+	justify-content: center;
+	margin: 0.5rem;
+	padding: 0.5rem 0.1rem;
+	text-align: center;
+	border-radius: 10px;
+}
+hr{
+	background: #999;
+	height: 1px;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	color: #FFF;
+	transition: 0.5s;
+}
+
+canvas{
+  position: absolute;
+  z-index: -200;
+  top:0;
+  left:0;
+  background-color:black;
+  width: 100%;
+}
+input, textarea{
+	width: 60%;
+	margin: 10px;
+	border-radius: 5px;
+	border: solid 2px #00b7c2;
+	padding: 10px; 
+}
+textarea{
+	height: 100px;
+}
+button{
+	background-color: #0f4c75;
+	border-radius: 10px;
+	color: #FFF;
+	font-size: 1rem;
+	padding: 0.7rem 1.5rem;
+}
+
+.formulario{
+	padding: 0 auto;
+}
+
+
+.contenedor{
+	display: flex;
+	flex-wrap: row;
+	margin: 10vh;
+	width: 90%;
+}
+.box1{
+	background: #0f4c75;
+	width: 40%;
+	-webkit-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.37);
+	-moz-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.37);
+	box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.37);
+	color: #FFF;
+
+}
+.foto{
+	display: flex;
+	justify-content: center;
+}
+img.fotoripi{
+	width: 100%;
+}
+.nombre{
+	text-align: center;
+	margin: 3rem 0rem;
+}
+.botones{
+	display: flex;
+	flex-wrap: row;
+}
+.cv, .contacto{
+	border: 1px solid #1b262c;
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	padding: 1rem;
+}
+.habili{
+	align-content: flex-start;
+}
+img.tool{
+	height: 50px;
+	margin: 8px;
+}
+
+/* Estilos nav */
+img.icono{
+	width: 30px;
+}
+
+/* Datos */
+
+.datos{
+	background: #f1f1f1;
+	border-radius: 0px 15px 15px 0px;
+	margin: 15px 15px 15px 0px;
+	padding: 2rem 2rem 2rem 2rem; 
+	width: 70%;
+}
+section.formulario{
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 700px) {
+	ul,li{
+		display: inline-flex;
+	}
+	nav{
+		width: 100%;
+	}
+	.contenedor{
+	display: inline-block;
+	}
+	.box1{
+		width: 100%;
+	}
+	.contenedor {
+	   margin: 1rem;
+	}
+	.datos{
+	width: 90%;
+	border-radius: 20px;
+	}
+
+}
